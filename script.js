@@ -28,7 +28,7 @@ const person = {
    last: "Elsafi",
    _gpa: 3.9,
    get fullName(){
-      return `${this.firstName} ${this.lastName}`;
+      return `${this.first} ${this.last}`;
    },
    get gpa(){
       return this._gpa;
@@ -38,6 +38,8 @@ const person = {
          this._gpa = newGpa;
    },
 };
+console.log(person.fullName, person.gpa);
+
 
 // ====================================
 // TODO-2: OBJECT AS MAP + for...in LOOP
@@ -146,10 +148,8 @@ words.forEach(w=>{
    if(re.test(w)){
       console.log(`${w} matches!`);
    }
-   else{
-      console.log(`${w} doesn't match!`);
-   }
-   
-
+   // else{
+   //    console.log(`${w} doesn't match!`);
+   // }
 });
 // End of Advance JavaScript Lab — good luck!

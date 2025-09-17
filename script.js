@@ -95,7 +95,7 @@ Task:
 3) Display both values.
 */
 const myNumbers = [1,2,3,4,5,6,7,8,13,12];
-const min = Math.min(...myNumbers); //use ...(arrayname)
+const min = Math.min(...myNumbers); //use ...(arrayname) which iterates over the array or just write all the numbers
 const max = Math.max(...myNumbers);//use ...(arrayname)
 console.log("Array =", myNumbers,"Min =", min, "Max=", max)
 
@@ -109,6 +109,25 @@ Task:
 3) Handle the error using try { ... } catch (e) { ... } finally { ... } and log messages
    in each block so you can see the flow of control.
 */
+
+function maxElement(array){
+   if(!Array.isArray(array) || array.length == 0){
+      throw new Error("Array must be non-empty.");
+   }
+   return Math.max(...array);
+}
+try{
+   const x = maxElement([])
+   console.log("Yay no error and the maximum value is", x)
+}
+catch(e){
+   console.log("Oops this is an error")
+}
+finally{
+   console.log("This block always runs")
+}
+   
+
 
 // ===================================================================================
 // TODO-7: REGEX + forEach — find words containing 'ab' and log matches from the list

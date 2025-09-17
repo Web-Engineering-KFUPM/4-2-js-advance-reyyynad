@@ -63,6 +63,11 @@ Task:
 2) Use .charAt(index) and .length to output characters and size.
 */
 
+const str = "RENAD";
+console.log(str.length);
+console.log(str.charAt(0));
+console.log(str.charAt(4));
+
 // ===================================
 // TODO-4: DATE — day, month, and year
 // ===================================

@@ -26,7 +26,7 @@ Task:
 const person = {
    first: "Renad",
    last: "Elsafi",
-   _gpa: 3.8,
+   _gpa: 3.9,
    get fullName(){
       return `${this.firstName} ${this.lastName}`;
    },
@@ -47,6 +47,10 @@ Task:
 1) Make an object used as a "map" (key → value), e.g., course codes → titles.
 2) Iterate over it with for...in and display each key and value.
 */
+const courseCodes = {ICS104: "Introduction to Programming Using Python", ICS202:"Data Structures", SWE363:"Web Development"}
+for (const key in courseCodes){
+   console.log(key)
+}
 
 
 

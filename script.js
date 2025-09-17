@@ -94,6 +94,10 @@ Task:
 2) Use spread syntax with Math.min(...) and Math.max(...) to find extremes.
 3) Display both values.
 */
+const myNumbers = [1,2,3,4,5,6,7,8,13,12];
+const min = Math.min(...myNumbers); //use ...(arrayname)
+const max = Math.max(...myNumbers);//use ...(arrayname)
+console.log("Array =", myNumbers,"Min =", min, "Max=", max)
 
 // ===================================================================
 // TODO-6: EXCEPTIONS — try/catch/finally with EMPTY ARRAY edge case

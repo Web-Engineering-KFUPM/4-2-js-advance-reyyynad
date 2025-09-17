@@ -22,6 +22,23 @@ Task:
 4) Create an instance/object and output its attributes using the getter(s).
 */
 
+//here we create an object with no class
+const person = {
+   first: "Renad",
+   last: "Elsafi",
+   _gpa: 3.8,
+   get fullName(){
+      return `${this.firstName} ${this.lastName}`;
+   },
+   get gpa(){
+      return this._gpa;
+   },
+   set updateGpa(newGpa){
+      if(newGpa>=0 && newGpa<=4)
+         this._gpa = newGpa;
+   },
+};
+
 // ====================================
 // TODO-2: OBJECT AS MAP + for...in LOOP
 // ====================================
@@ -30,6 +47,8 @@ Task:
 1) Make an object used as a "map" (key → value), e.g., course codes → titles.
 2) Iterate over it with for...in and display each key and value.
 */
+
+
 
 // =========================================
 // TODO-3: STRING OBJECT — charAt() & length
